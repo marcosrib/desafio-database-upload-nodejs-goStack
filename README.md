@@ -28,9 +28,19 @@ além de permitir a criação de novos registros no banco de dados a partir do e
 - express-async-errors.
 ## :floppy_disk: Banco de dados: 
 - postgres.
+:
+## :arrow_forward: Como executar:
+No terminal clone o projeto.
+```
+git clone https://github.com/marcosrib/desafio-database-upload-nodejs-goStack.git
+```
+Entre na pasta do projeto e instale as dependências executando.
+```
+yarn ou npm install
+```
+Para rodar o projeto execute.
 
-/*Para projetos com React*/
-$ npm test
+```
+yarn dev:server
+```
 
-/*Para projetos com Rails*/
-$ rspec
