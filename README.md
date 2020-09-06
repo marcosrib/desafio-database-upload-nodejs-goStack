@@ -29,3 +29,8 @@ além de permitir a criação de novos registros no banco de dados a partir do e
 ## :floppy_disk: Banco de dados: 
 - postgres.
 
+/*Para projetos com React*/
+$ npm test
+
+/*Para projetos com Rails*/
+$ rspec
