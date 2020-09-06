@@ -8,6 +8,8 @@ class ImportTransactionsService {
   async execute(): Promise<Transaction[]> {
     const categoriesRepository = getRepository(Category);
 
+    const transactionsRepository = getRepository(Transaction);
+
     const csvFilePath = path.resolve(__dirname, 'import_template.csv');
 
     const dataCSV = await loadCSV(csvFilePath);
@@ -33,13 +35,21 @@ class ImportTransactionsService {
       })),
     );
 
-    categoriesRepository.save(categoryCreated);
+    const categoriesSaved = await categoriesRepository.save(categoryCreated);
 
-    console.log(categoriesExistes);
+    const newCategories = [...categories, ...categoriesSaved];
 
-    console.log(categoriesTitlesUniques);
+    const transactions = transactionsRepository.create(
+      dataCSV.map(transaction => ({
+        title: transaction[0],
+        type: transaction[1] as 'income' | 'outcome',
+        value: Number(transaction[2]),
+        category: newCategories.find(c => c.title === transaction[3]),
+      })),
+    );
 
-    return [];
+    const createdTransactios = await transactionsRepository.save(transactions);
+    return createdTransactios;
   }
 }
 
