@@ -4,7 +4,8 @@
   - [Descriçao do projeto:](#memo-descriçao-do-projeto)
   - [Funcionalidades:](#gear-funcionalidades)
   - [Bibliotecas utilizadas:](#file_folder-bibliotecas-utilizadas)
--  [Banco de dados:](#floppy_disk-banco-de-dados)
+  - [Banco de dados:](#floppy_disk-banco-de-dados)
+  - [Como executar:](#arrow_forward-como-executar)
 
 ## :memo:   Descriçao do projeto:
 
