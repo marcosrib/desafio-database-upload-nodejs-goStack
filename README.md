@@ -8,7 +8,7 @@
 
 ## :memo:   Descriçao do projeto:
 
-Neste desafio foi proposto o desenvolvimento de uma aplicação de transações com Node.js.
+Neste desafio foi proposto o desenvolvimento de uma aplicação de transações financeiras com Node.js.
 
 Para concluir este desafio teria que armazenar transações financeiras de entrada e saída e permitir o cadastro e a listagem dessas transações,
 além de permitir a criação de novos registros no banco de dados a partir do envio de um arquivo csv
