@@ -1,13 +1,13 @@
 # Desafio nivel2 GoStack
 
 ## :page_with_curl: Ídice: 
-  - [Descriçao do projeto:](#memo-descriçao-do-projeto)
+  - [Descrição do projeto:](#memo-descrição-do-projeto)
   - [Funcionalidades:](#gear-funcionalidades)
   - [Bibliotecas utilizadas:](#file_folder-bibliotecas-utilizadas)
   - [Banco de dados:](#floppy_disk-banco-de-dados)
   - [Como executar:](#arrow_forward-como-executar)
 
-## :memo:   Descriçao do projeto:
+## :memo: Descrição do projeto:
 
 Neste desafio foi proposto o desenvolvimento de uma aplicação de transações financeiras com Node.js.
 
