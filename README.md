@@ -28,8 +28,9 @@ além de permitir a criação de novos registros no banco de dados a partir do e
 - csv-parse.
 - express-async-errors.
 ## :floppy_disk: Banco de dados: 
-- postgres.
-:
+- postgreSQL
+
+
 ## :arrow_forward: Como executar:
 No terminal clone o projeto.
 ```
