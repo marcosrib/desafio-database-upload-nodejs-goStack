@@ -4,15 +4,17 @@ import Transaction from '../models/Transaction';
 import Category from '../models/Category';
 import loadCSV from '../config/file';
 
+import uploadConfig from '../config/upload';
+
 class ImportTransactionsService {
-  async execute(): Promise<Transaction[]> {
+  async execute(fileName: string): Promise<Transaction[]> {
     const categoriesRepository = getRepository(Category);
 
     const transactionsRepository = getRepository(Transaction);
 
-    const csvFilePath = path.resolve(__dirname, 'import_template.csv');
+    const userAvatarFilePath = path.join(uploadConfig.directory, fileName);
 
-    const dataCSV = await loadCSV(csvFilePath);
+    const dataCSV = await loadCSV(userAvatarFilePath);
 
     const categoriesTitles = dataCSV.map(category => category[3]);
     const categoriesTitlesUniques = categoriesTitles.filter(
